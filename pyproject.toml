@@ -1,0 +1,26 @@
+[project]
+name = "mlops-final-project-arabic-sentiment-analysis"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "WeaamGomaa", email = "weeamgomaa@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "arabert>=1.0.1",
+    "datasets>=5.0.1",
+    "evaluate>=0.4.6",
+    "numpy>=2.5.3",
+    "pandas>=3.0.6",
+    "scikit-learn>=1.9.1",
+    "torch>=2.14.0",
+    "transformers>=5.17.0",
+]
+
+[project.scripts]
+mlops-final-project-arabic-sentiment-analysis = "mlops_final_project_arabic_sentiment_analysis:main"
+
+[build-system]
+requires = ["uv_build>=0.12.18,<0.13.0"]
+build-backend = "uv_build"
